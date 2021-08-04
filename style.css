@@ -383,11 +383,13 @@ color: #EB5757;
 }
 .footer{
   background-color: #100E1D;
-  height: 100%;
+  width: 100%;
+  color:white;
+}
+.footer .something{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color:white;
 }
 .footer *{
   color:white;
@@ -415,29 +417,55 @@ color: #EB5757;
   color:black;
   background-color: white;
 }
+div.author{
+  display: flex;
+  justify-content: center;
+  margin:10px;
+  width: 100%;
+  height: 110%;
+  font-size: 18px;
+  font-weight: bolder;
 
-
+  text-align: center;
+}
+.author a{
+  text-decoration: none;
+  color:cyan;
+}
 
 
 
 
 
 @media (max-width:850px) {
-  .footer{
+.footer .something{
+  margin-left: 10%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "ul"
+    "edie"
+    "email";
     grid-gap: 25px;
   }
   .footer ul{
-    width:100%;
-  }
-  .footer .sosmed{
-    width: 100%;
+    margin-left: 10%;
+    grid-area: ul;
+
     text-align: center;
   }
+  .footer .sosmed{
+    grid-area: edie;
+    width: 100%;
+    text-align: center;
+    margin-left: 2%;
+  }
 .footer .kontak{
+  grid-area: "email"
   width: 100%;
   text-align: center;
+  margin-left: 5%;
+
 }
 
   div.judul{
@@ -490,10 +518,9 @@ color: #EB5757;
   .nav {
     position: fixed;
     top: 0;
-    right: -100vw;
-
+    right: -50vw;
     height: 100vh;
-    width: 100vw;
+    width: 50vw;
     z-index: 2;
 
     background-color: black;
@@ -535,7 +562,7 @@ color: #EB5757;
     float: none;
     display:flex;
     justify-content: center;
-    width: 80vw;
+    width: 40vw;
 
   }
   ul li a{
@@ -584,7 +611,15 @@ color: #EB5757;
 
 }
 @media (max-width:500px) {
-
+  .footer .something{
+      margin-left:0;
+  }
+  ul{
+    margin-top:10vh;
+  }
+  ul li{
+    width: 30vw;
+  }
   div.pelayanan-dev{
     grid-template-areas: "uidesign"
                           "frontend"
@@ -594,5 +629,7 @@ color: #EB5757;
     width: 100%;
     margin-left: 5%;
   }
-
+.something ul{
+  margin-left:20%;
+}
 }
