@@ -469,6 +469,7 @@ div.author{
 }
 
   div.judul{
+    width:100%;
     font-size: 36px;
     font-weight: bolder;
   }
@@ -611,8 +612,19 @@ div.author{
 
 }
 @media (max-width:500px) {
+
+  div.judul{
+    font-size: 20px;
+    line-height: 22px;
+  }
+  div.judul p{
+    font-size:16px;
+  }
   .footer .something{
       margin-left:0;
+  }
+  input[type="email"]{
+    width:90%;
   }
   ul{
     margin-top:10vh;
@@ -632,4 +644,13 @@ div.author{
 .something ul{
   margin-left:20%;
 }
+}
+@media (max-width:375px) {
+  ul{
+    margin-top:15vh;
+  }
+  ul li{
+    width: 10vh;
+  }
+
 }
