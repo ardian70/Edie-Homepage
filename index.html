@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title>
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <article class="konten">
+    <header>
+      <h1>edie</h1>
+      <nav>
+        <div class="backdrop"></div>
+        <div class="nav" id="nav">
+          <ul>
+            <li><a class="aktif" href="#home">home</a></li>
+            <li><a href="#services">services</a></li>
+            <li><a href="#ourworks">our works</a></li>
+            <li><a href="#clients">clients</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <button class="hamburger-button" id="hamburger-button" onclick="toggleNavigation()">
+        <div class="hamburger-button__bar"></div>
+        <div class="hamburger-button__bar"></div>
+        <div class="hamburger-button__bar"></div>
+      </button>
+    </header>
+    <div class="content">
+      <div class="pengantar" id="home">
+        Website anda kurang menarik?
+      </div>
+      <div class="judul">
+        Kami membuat layanan web yang indah dan cepat
+      </div>
+      <img id="hero" src="heroImage.jpg" alt="heroimage">
+      <div class="judul">
+        Visi , misi dan Tujuan
+        <p>Kami membantu mengubah ide Anda menjadi aplikasi dunia nyata yang akan mengungguli pesaing terberat Anda dan membantu Anda mencapai tujuan strategis Anda dalam waktu singkat.
+        </p>
+      </div>
+      <div class="kontak">
+        <label for="ngontak">ingin kami menghubungi anda?</label><br>
+        <input type="email" name="ngontak" placeholder="Email">
+        <input type="submit" name="ngontak" value="join">
+      </div>
+      <div class="space" id="services">
+
+      </div>
+      <div class="judul" >
+        Kami menawarkan Pelayanan yang berkualitas
+      </div>
+      <div class="pelayanan-dev">
+        <div class="frontend sec">
+          <span class="material-icons-outlined">
+            code
+          </span>
+          <h3>front end</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button type="button" name="getstarted">Get Started</button>
+        </div>
+
+        <div class="uidesign sec">
+          <span class="material-icons-outlined">
+            mode_edit
+          </span>
+          <h3>UI/UX Design</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button type="button" name="getstarted">Get Started</button>
+        </div>
+        <div class="backend sec">
+          <span class="material-icons-outlined">
+            storage
+          </span>
+          <h3>Back End</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+          <button type="button" name="getstarted">Get Started</button>
+        </div>
+      </div>
+      <div class="space" id="ourworks">
+
+      </div>
+      <div class="pekerjaan" >
+        <div class="judul">
+          Desain yang bagus berarti bisnis yang menjanjikan
+        </div>
+        <div class="ourwork">
+          <div class="polaroid aa">
+          <img src="smarthome.jpg" alt="smarthome">
+          <div class="container">
+            <p>Full stack application</p>
+            <p>Smart home dashboard</p>
+          </div>
+          </div>
+          <div class="polaroid">
+          <img src="onboard.png" alt="onboard">
+          <div class="container">
+            <p>UX/UI design</p>
+            <p>Onboard application</p>
+          </div>
+          </div>
+          <div class="polaroid aa">
+          <img src="booking.png" alt="booking">
+          <div class="container">
+            <p>Mobile application</p>
+            <p>Booking system</p>
+          </div>
+          </div>
+          <div class="polaroid">
+          <img src="juice-product.png" alt="juice">
+          <div class="container">
+            <p>Front End applicati on</p>
+            <p>Juice product homepage</p>
+          </div>
+          </div>
+        </div>
+        <div class="lihat_lebih">
+        <span>lihat lebih banyak</span> <span class="material-icons-outlined"> arrow_right_alt</span>
+        </div>
+      </div>
+      <div class="space">
+
+      </div>
+      <div class="team">
+        <div class="team-konten">
+          <span>Meet the team</span>
+          <div class="judul">
+            We are chilled and a laidback team
+          </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
+        </div>
+        <div class="person3">
+          <img src="person3.png" alt="person3">
+        </div>
+        <div class="person1">
+          <img src="person1.png" alt="person1">
+        </div>
+        <div class="person2">
+          <img src="person2.png" alt="person2">
+        </div>
+      </div>
+      <div class="space" id="clients">
+
+      </div>
+      <div class="klien" >
+        <div class="judul">
+          “Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”
+        </div>
+        <div class="klien-profil">
+          <img src="person4.png" alt="person4">
+          <div class="nama-profil">
+            <span>Carlos Tran</span><br>
+            <span>The Decorate Gatsby</span>
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="footer">
+  <ul>
+    <li><a class="aktif" href="#home">home</a></li>
+    <li><a href="#services">services</a></li>
+    <li><a href="#ourworks">our works</a></li>
+    <li><a href="#clients">clients</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+  <div class="sosmed">
+    <h1>edie</h1>
+    <img src="instagram.svg" alt="instagram">
+    <img src="linkedin.svg" alt="linkedin">
+    <img src="twitter.svg" alt="twitter">
+  </div>
+  <div class="kontak" id="contact">
+    <label for="ngontak">ingin kami menghubungi anda?</label><br>
+    <input type="email" name="ngontak" placeholder="Email">
+    <input type="submit" name="ngontak" value="join">
+  </div>
+</div>
+  </article>
+
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+</html>

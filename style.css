@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@500&family=Poppins&display=swap');
+body{
+  font-family: 'Poppins', sans-serif;
+background: #FFFFFF;
+}
+
+/* NOTE: bagian header */
+*{
+  box-sizing: border-box;
+}
+article{
+  margin: 0;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  position:sticky;
+  top:0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  margin-top: 0;
+  border-radius: 12px;
+}
+
+ ul{
+  list-style-type: none;
+}
+ ul li{
+  float: left;
+}
+  ul li a{
+  justify-content: space-around;
+  display: block;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+ ul li a:hover, a.aktif{
+  color: white;
+  background-color: #333333;
+  border-radius: 50px;
+  border-color: none;
+  border-width:
+}
+h1{
+  font-family: 'Heebo', sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 53px;
+  color: #333333;
+  text-transform: capitalize;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(https://example.com/MaterialIcons-Regular.woff2) format('woff2'),
+    url(https://example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(https://example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+.material-icons-outlined {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.hamburger-button {
+  display: none;
+  background: none;
+  border: none;
+
+  position: relative;
+  z-index: 10;
+}
+
+/* NOTE: bagian konten */
+.content{
+margin:10% 1%;
+
+}
+.content div{
+  margin:0 10%;
+}
+.content div.team{
+  margin:0;
+}
+.pengantar{
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2D9CDB;
+
+}
+div.judul{
+  width:60%;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 72px;
+  color: #333333;
+  margin:5% 1%;
+}
+.judul p{
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  color: #4F4F4F;
+}
+.space{
+  height:150px;
+}
+label{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #828282;
+}
+img#hero{
+  border-radius: 18px;
+  width: 100%;
+}
+input[type="email"]{
+  background: #F2F2F2;
+  width: 350px;
+  height: 57px;
+  border:none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+}
+input[type="submit"]{
+  width: 94px;
+  height: 49px;
+  background: #2D9CDB;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #F2F2F2;
+  transition: transform 0.4s ease-in-out;
+}
+input[type="submit"]:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+div.pelayanan-dev{
+  margin:0 5%;
+  display:grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "frontend uidesign backend";
+  gap:20px;
+}
+.frontend{
+  grid-area: frontend
+}
+.uidesign{
+  grid-area:uidesign;
+}
+.backend{
+  grid-area:backend
+}
+div.sec{
+  margin:0;
+  margin-top:5%;
+  padding:10%;
+  width: 341px;
+transition: transform 0.5s ease-in-out;
+
+}
+div.sec:hover{
+  background: #FFFFFF;
+  box-shadow: 0px 10px 30px rgba(51, 51, 51, 0.1);
+  border-radius: 24px;
+  transform: scale(1.05);
+
+}
+.sec span{
+  width: 67px;
+  height: 67px;
+  text-align:center;
+  border-radius: 16px;
+  font-size: 32px;
+  padding:6%;
+  color: white
+}
+.frontend span{
+  background: #27AE60;
+}
+.backend span{
+  background: #EB5757;
+}
+.uidesign span{
+  background: #2D9CDB;
+}
+.sec button{
+  width: 116px;
+  height: 42px;
+  background: #E0E0E0;
+  border-radius: 12px;
+  border: none;
+  color: #828282;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sec button:hover{
+  cursor: pointer;
+  background: #2D9CDB;
+  color: #FFFFFF;
+
+}
+h3{
+  font-family: 'Poppins' , sans-serif;
+  font-weight:bolder;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+}
+
+.pekerjaan div{
+  margin: 0;
+}
+.ourwork{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  grid-template-rows: repeat(2 , 1fr);
+  gap: 5px;
+}
+
+.ourwork img{
+  width: 100%;
+  object-fit:cover;
+  border-radius: 12px;
+}
+div.aa{
+  margin-top: 20%;
+}
+div.polaroid {
+  width: 80%;
+  height: 80%;
+  background-color: white;
+  margin-bottom: 25px;
+  border-radius: 12px;
+}
+div.polaroid:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.container {
+  padding: 10px 20px;
+}
+.container p:first-child{
+  font-weight: 300;
+  font-size: 14px;
+  color: #828282;
+}
+.container p:last-child{
+  font-weight: 500;
+  font-size: 24px;
+  color: #333333;
+}
+.lihat_lebih{
+  text-align: right;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2D9CDB;
+  cursor: pointer;
+}
+.lihat_lebih span:first-child{
+  font-size: 24px;
+}
+.lihat_lebih span:last-child{
+  font-size: 20px;
+}
+.team{
+  margin:0;
+  width: 100%;
+  display: grid;
+  grid-gap:10px;
+  grid-template-areas: "team-konten  person3 person1"
+                        "team-konten  person3 person2"
+}
+.team-konten{
+  margin:0;
+  grid-area: team-konten;
+  align-self: center;
+}
+.team-konten div{
+  width:100%;
+  margin:0;
+}
+.person1{
+  grid-area: person1;
+}
+.person2{
+  grid-area: person2;
+}
+.person3{
+  grid-area: person3;
+  align-self: center;
+}
+
+.team img{
+  border-radius: 24px;
+  width: 100%;
+}
+
+.person3 img{
+  width:120%;
+  object-fit: cover;
+}
+
+.team-konten span{
+  font-weight: 500;
+font-size: 18px;
+line-height: 27px;
+color: #EB5757;
+}
+.team-konten p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #4F4F4F;
+}
+.klien-profil{
+  display: flex;
+  justify-content: flex-start;
+  margin:5%;
+}
+.klien-profil img{
+  width:20%;
+  height: 20%;
+  border-radius: 12px;
+}
+.nama-profil{
+  margin:20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #333333;
+  align-self: center;
+}
+.nama-profil span:last-child{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #828282;
+}
+.klien div{
+  width:100%;
+}
+.footer{
+  background-color: #100E1D;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+}
+.footer *{
+  color:white;
+}
+.footer input[type="email"]{
+  color: #828282;
+}
+.footer h1{
+  margin:1% 0;
+}
+.footer img{
+  margin-right:1px;
+}
+.footer ul{
+  width:20%;
+}
+.footer ul{
+  text-align: center;
+}
+.footer ul li a{
+
+  background-color:#100E1D;
+}
+.footer a.aktif ,.footer ul li a:hover{
+  color:black;
+  background-color: white;
+}
+
+
+
+
+
+
+
+@media (max-width:850px) {
+  .footer{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 25px;
+  }
+  .footer ul{
+    width:100%;
+  }
+  .footer .sosmed{
+    width: 100%;
+    text-align: center;
+  }
+.footer .kontak{
+  width: 100%;
+  text-align: center;
+}
+
+  div.judul{
+    font-size: 36px;
+    font-weight: bolder;
+  }
+  .team{
+    grid-template-areas: "team-konten team-konten"
+                          "person3 person1"
+                          "person3 person2";
+  }
+  .klien div{
+    font-size: 24px;
+  }
+  .hamburger-button {
+    display: block;
+    background: none;
+    border: none;
+
+    position: relative;
+    z-index: 10;
+  }
+  .hamburger-button__bar {
+    height: 3px;
+    width: 22px;
+    background-color: black;
+    margin-top: 4px;
+    border-radius: 2px;
+    transform-origin: 21px;
+    transition: transform 0.4s ease-in-out , opacity 0.4s ease-in-out;
+  }
+
+  .hamburger-button__bar:nth-child(1) {
+    margin-top: 0;
+  }
+
+  .hamburger-button--open .hamburger-button__bar:nth-child(1) {
+    transform: rotate(-45deg);
+    background-color: white;
+  }
+
+  .hamburger-button--open .hamburger-button__bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-button--open .hamburger-button__bar:nth-child(3) {
+    transform: rotate(45deg);
+    background-color: white;
+  }
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100vw;
+
+    height: 100vh;
+    width: 100vw;
+    z-index: 2;
+
+    background-color: black;
+    color: white;
+    padding: 32px;
+
+    transition: transform 0.4s ease-in-out ;
+  }
+  .nav--open {
+    transform: translateX(-100%);
+  }
+
+  .nav--open + .backdrop {
+    display: block;
+    opacity: 1;
+  }
+
+  .backdrop {
+    content: "";
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+
+    background: rgba(1, 1, 1, 0.5);
+    z-index: 0;
+
+  opacity: 0;
+
+  transition: opacity 0.4s ease-in-out ;
+  }
+
+  ul{
+  display: block;
+  }
+  ul li{
+    float: none;
+    display:flex;
+    justify-content: center;
+    width: 80vw;
+
+  }
+  ul li a{
+    justify-content: space-around;
+    display: block;
+    color: black;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: white;
+  }
+  ul li a:hover, a.aktif{
+
+    color: #333333;
+    background-color: white;
+    border-radius: 30px;
+    border-color: none;
+  }
+  div.pelayanan-dev{
+    width: 100%;
+    grid-template-areas: "uidesign frontend"
+                         "backend backend";
+                         margin: 0;
+  }
+  div.sec{
+    width: 98%;
+  }
+  .ourwork{
+    grid-template-columns: repeat(1 , 1fr);
+    gap:10px;
+  }
+  div.aa{
+    margin-top:0;
+  }
+  div.polaroid {
+    width: 100%;
+    height: 100%;
+  }
+.lihat_lebih{
+  text-align: left;
+}
+
+}
+@media (max-width:500px) {
+
+  div.pelayanan-dev{
+    grid-template-areas: "uidesign"
+                          "frontend"
+                          "backend";
+  }
+  div.sec{
+    width: 100%;
+    margin-left: 5%;
+  }
+
+}
